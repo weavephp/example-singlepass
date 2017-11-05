@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "11f2a700ae526feb691f48a791084cc7",
+    "content-hash": "0c3a8d43223d408f322fdf20394df934",
     "packages": [
         {
             "name": "aura/di",
@@ -479,29 +479,32 @@
         },
         {
             "name": "weavephp/config-zend",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/config-zend.git",
-                "reference": "696bf9a8f2dbb274ede8f1ab8ed04fa4b7d148de"
+                "reference": "d02146541409628724352e08252fa5822440d416"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/config-zend/zipball/696bf9a8f2dbb274ede8f1ab8ed04fa4b7d148de",
-                "reference": "696bf9a8f2dbb274ede8f1ab8ed04fa4b7d148de",
+                "url": "https://api.github.com/repos/weavephp/config-zend/zipball/d02146541409628724352e08252fa5822440d416",
+                "reference": "d02146541409628724352e08252fa5822440d416",
                 "shasum": ""
             },
             "require": {
                 "zendframework/zend-config": "^3.1",
                 "zendframework/zend-config-aggregator": "^1.0"
             },
-            "type": "package",
+            "type": "weave-adaptor",
             "autoload": {
                 "psr-4": {
                     "Weave\\Config\\Zend\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Robert Goldsmith",
@@ -509,32 +512,44 @@
                 }
             ],
             "description": "Weave glue-framework Zend Config adaptor",
-            "time": "2017-11-03T16:04:33+00:00"
+            "keywords": [
+                "adaptor",
+                "config",
+                "weave"
+            ],
+            "time": "2017-11-04T23:50:19+00:00"
         },
         {
             "name": "weavephp/container-aura",
-            "version": "0.0.1",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/container-aura.git",
-                "reference": "b7c814607687b820c369c2710bead5ccf9e3a783"
+                "reference": "5c637edaeb7fe7d1d52c436b4c88cc736790a0c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/container-aura/zipball/b7c814607687b820c369c2710bead5ccf9e3a783",
-                "reference": "b7c814607687b820c369c2710bead5ccf9e3a783",
+                "url": "https://api.github.com/repos/weavephp/container-aura/zipball/5c637edaeb7fe7d1d52c436b4c88cc736790a0c2",
+                "reference": "5c637edaeb7fe7d1d52c436b4c88cc736790a0c2",
                 "shasum": ""
             },
             "require": {
                 "aura/di": "^3.4"
             },
-            "type": "package",
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.0",
+                "weavephp/weave": "^0.0.3"
+            },
+            "type": "weave-adaptor",
             "autoload": {
                 "psr-4": {
                     "Weave\\Container\\Aura\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Robert Goldsmith",
@@ -542,32 +557,43 @@
                 }
             ],
             "description": "Weave glue-framework Aura.Di Container adaptor",
-            "time": "2017-11-03T16:04:50+00:00"
+            "keywords": [
+                "adptor",
+                "container",
+                "weave"
+            ],
+            "time": "2017-11-05T03:13:39+00:00"
         },
         {
             "name": "weavephp/error-whoops",
-            "version": "0.0.1",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/error-whoops.git",
-                "reference": "daff30cebedd4e07519c729e47c4ee006966d675"
+                "reference": "49b156f3880a369e9d1c37761342abfbe23dcda2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/error-whoops/zipball/daff30cebedd4e07519c729e47c4ee006966d675",
-                "reference": "daff30cebedd4e07519c729e47c4ee006966d675",
+                "url": "https://api.github.com/repos/weavephp/error-whoops/zipball/49b156f3880a369e9d1c37761342abfbe23dcda2",
+                "reference": "49b156f3880a369e9d1c37761342abfbe23dcda2",
                 "shasum": ""
             },
             "require": {
                 "filp/whoops": "2.*"
             },
-            "type": "package",
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "weave-adaptor",
             "autoload": {
                 "psr-4": {
                     "Weave\\Error\\Whoops\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Robert Goldsmith",
@@ -575,32 +601,43 @@
                 }
             ],
             "description": "Weave glue-framework Whoops Error adaptor",
-            "time": "2017-11-03T16:05:01+00:00"
+            "keywords": [
+                "adaptor",
+                "error",
+                "weave"
+            ],
+            "time": "2017-11-05T03:08:23+00:00"
         },
         {
             "name": "weavephp/http-zenddiactoros",
-            "version": "0.0.1",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/http-zenddiactoros.git",
-                "reference": "ad4056d60bdbd93bd2712b101d6dd392022274b6"
+                "reference": "4ed4cde7f4b1028f89b631bbbf4125c0eb4c1b81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/http-zenddiactoros/zipball/ad4056d60bdbd93bd2712b101d6dd392022274b6",
-                "reference": "ad4056d60bdbd93bd2712b101d6dd392022274b6",
+                "url": "https://api.github.com/repos/weavephp/http-zenddiactoros/zipball/4ed4cde7f4b1028f89b631bbbf4125c0eb4c1b81",
+                "reference": "4ed4cde7f4b1028f89b631bbbf4125c0eb4c1b81",
                 "shasum": ""
             },
             "require": {
                 "zendframework/zend-diactoros": "^1.6"
             },
-            "type": "package",
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "weave-adaptor",
             "autoload": {
                 "psr-4": {
                     "Weave\\Http\\ZendDiactoros\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Robert Goldsmith",
@@ -608,32 +645,43 @@
                 }
             ],
             "description": "Weave glue-framework Zend Diactoros PSR7 HTTP Message adaptor",
-            "time": "2017-11-03T16:05:09+00:00"
+            "keywords": [
+                "adaptor",
+                "psr7",
+                "weave"
+            ],
+            "time": "2017-11-05T03:08:57+00:00"
         },
         {
             "name": "weavephp/middleware-middleman2",
-            "version": "0.0.1",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/middleware-middleman2.git",
-                "reference": "e2a1102437a43f2c22bd87823e6d717dfbfee994"
+                "reference": "04b1f166b8d6ee36d359493bdccd638dbee74323"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/middleware-middleman2/zipball/e2a1102437a43f2c22bd87823e6d717dfbfee994",
-                "reference": "e2a1102437a43f2c22bd87823e6d717dfbfee994",
+                "url": "https://api.github.com/repos/weavephp/middleware-middleman2/zipball/04b1f166b8d6ee36d359493bdccd638dbee74323",
+                "reference": "04b1f166b8d6ee36d359493bdccd638dbee74323",
                 "shasum": ""
             },
             "require": {
                 "mindplay/middleman": "~2.0"
             },
-            "type": "package",
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "weave-adaptor",
             "autoload": {
                 "psr-4": {
                     "Weave\\Middleware\\Middleman\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Robert Goldsmith",
@@ -641,32 +689,43 @@
                 }
             ],
             "description": "Weave glue-framework Middleman Middleware adaptor",
-            "time": "2017-11-04T09:45:59+00:00"
+            "keywords": [
+                "adaptor",
+                "middleware",
+                "weave"
+            ],
+            "time": "2017-11-05T03:09:29+00:00"
         },
         {
             "name": "weavephp/router-aura",
-            "version": "0.0.1",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/router-aura.git",
-                "reference": "cc7d193c3420d05e26272bf9671007b2662cda09"
+                "reference": "176d234d4db988df0b2b0900b39ac3b6074301f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/router-aura/zipball/cc7d193c3420d05e26272bf9671007b2662cda09",
-                "reference": "cc7d193c3420d05e26272bf9671007b2662cda09",
+                "url": "https://api.github.com/repos/weavephp/router-aura/zipball/176d234d4db988df0b2b0900b39ac3b6074301f3",
+                "reference": "176d234d4db988df0b2b0900b39ac3b6074301f3",
                 "shasum": ""
             },
             "require": {
                 "aura/router": "^3.1"
             },
-            "type": "package",
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "weave-adaptor",
             "autoload": {
                 "psr-4": {
                     "Weave\\Router\\Aura\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Robert Goldsmith",
@@ -674,34 +733,45 @@
                 }
             ],
             "description": "Weave glue-framework Aura.Router Router adaptor",
-            "time": "2017-11-03T16:05:39+00:00"
+            "keywords": [
+                "adaptor",
+                "router",
+                "weave"
+            ],
+            "time": "2017-11-05T03:10:30+00:00"
         },
         {
             "name": "weavephp/weave",
-            "version": "0.0.1",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/weave.git",
-                "reference": "d2d6d8a34169a2eb21d69ab522edb788e79c7780"
+                "reference": "283efcc6affae572be65f06c559fd733bb7a8f79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/weave/zipball/d2d6d8a34169a2eb21d69ab522edb788e79c7780",
-                "reference": "d2d6d8a34169a2eb21d69ab522edb788e79c7780",
+                "url": "https://api.github.com/repos/weavephp/weave/zipball/283efcc6affae572be65f06c559fd733bb7a8f79",
+                "reference": "283efcc6affae572be65f06c559fd733bb7a8f79",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6.0",
+                "php": ">=5.6",
                 "psr/http-message": "~1.0",
                 "psr/log": "~1.0"
             },
-            "type": "package",
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "framework",
             "autoload": {
                 "psr-4": {
                     "Weave\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Robert Goldsmith",
@@ -709,7 +779,12 @@
                 }
             ],
             "description": "Weave glue-framework Core",
-            "time": "2017-11-04T09:43:19+00:00"
+            "keywords": [
+                "framework",
+                "micro",
+                "weave"
+            ],
+            "time": "2017-11-05T03:06:13+00:00"
         },
         {
             "name": "zendframework/zend-config",
@@ -923,7 +998,59 @@
             "time": "2016-09-13T14:38:50+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "squizlabs/php_codesniffer",
+            "version": "3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+                "reference": "d667e245d5dcd4d7bf80f26f2c947d476b66213e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/d667e245d5dcd4d7bf80f26f2c947d476b66213e",
+                "reference": "d667e245d5dcd4d7bf80f26f2c947d476b66213e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "ext-tokenizer": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0"
+            },
+            "bin": [
+                "bin/phpcs",
+                "bin/phpcbf"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Sherwood",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+            "homepage": "http://www.squizlabs.com/php-codesniffer",
+            "keywords": [
+                "phpcs",
+                "standards"
+            ],
+            "time": "2017-10-16T22:40:25+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],

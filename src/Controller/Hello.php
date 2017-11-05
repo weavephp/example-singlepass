@@ -21,12 +21,12 @@ class Hello
 	 *
 	 * @var string
 	 */
-	protected $_message;
+	protected $message;
 
 	/**
 	 * The factory for creating PSR7 response objects.
 	 */
-	protected $_responseFactory;
+	protected $responseFactory;
 
 	/**
 	 * Constructor.
@@ -42,8 +42,8 @@ class Hello
 		$message,
 		\Weave\Http\ResponseFactoryInterface $responseFactory
 	) {
-		$this->_message = $message;
-		$this->_responseFactory = $responseFactory;
+		$this->message = $message;
+		$this->responseFactory = $responseFactory;
 	}
 
 	/**
@@ -59,9 +59,9 @@ class Hello
 	 */
 	public function hello(Request $request)
 	{
-		$response = $this->_responseFactory->newResponse();
+		$response = $this->responseFactory->newResponse();
 		$owner = $request->getAttribute('owner');
-		$response->getBody()->write($this->_message . ", " . $owner . "\n");
+		$response->getBody()->write($this->message . ", " . $owner . "\n");
 		return $response->withHeader('Content-Type', 'text/plain');
 	}
 }
