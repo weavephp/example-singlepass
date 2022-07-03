@@ -15,7 +15,7 @@ use Aura\Di\ContainerConfig;
 class Config extends ContainerConfig
 {
 	/**
-	 * The config loaded in this case via Zend Config.
+	 * The config loaded in this case via Laminas Config.
 	 *
 	 * @var array
 	 */
@@ -45,17 +45,17 @@ class Config extends ContainerConfig
 			\Weave\Middleware\Middleman\Middleman::class
 		);
 
-		// Specify we want to use Zend Diactoros for our PSR7 stuff
+		// Specify we want to use Laminas Diactoros for our PSR7 stuff
 		$container->types[\Weave\Http\ResponseEmitterInterface::class] = $container->lazyNew(
-			\Weave\Http\ZendDiactoros\ResponseEmitter::class
+			\Weave\Emitter\Laminas\ResponseEmitter::class
 		);
 
 		$container->types[\Weave\Http\RequestFactoryInterface::class] = $container->lazyNew(
-			\Weave\Http\ZendDiactoros\RequestFactory::class
+			\Weave\Http\LaminasDiactoros\RequestFactory::class
 		);
 
 		$container->types[\Weave\Http\ResponseFactoryInterface::class] = $container->lazyNew(
-			\Weave\Http\ZendDiactoros\ResponseFactory::class
+			\Weave\Http\LaminasDiactoros\ResponseFactory::class
 		);
 
 		// Specify we want to use Aura for our router

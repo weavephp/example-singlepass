@@ -11,8 +11,11 @@ namespace App;
  */
 class App
 {
-	use \Weave\Weave, \Weave\Config\Zend\Zend, \Weave\Error\Whoops\Whoops, \Weave\Container\Aura\Aura;
-	// ^^ Use Zend for config, Whoops for error handling and Aura for the DIC.
+	use \Weave\Weave,
+		\Weave\Config\Laminas\Laminas,
+		\Weave\Error\Whoops\Whoops,
+		\Weave\Container\Aura\Aura;
+		// ^^ Use Laminas for config, Whoops for error handling and Aura for the DIC.
 
 	/**
 	 * Helpful const to control which environment we are in.
