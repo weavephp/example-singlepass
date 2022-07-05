@@ -36,9 +36,9 @@ class Config extends ContainerConfig
 	 *
 	 * @param Container $container The DI container.
 	 *
-	 * @return null
+	 * @return void
 	 */
-	public function define(Container $container)
+	public function define(Container $container): void
 	{
 		// Specify we want to use Middleman for our Middleware
 		$container->types[\Weave\Middleware\MiddlewareAdaptorInterface::class] = $container->lazyNew(

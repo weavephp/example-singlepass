@@ -4,33 +4,33 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc92a56ccd403f389a94fe6312dce50b",
+    "content-hash": "c58d5b3f8d03c5ea6b87d95740aa477e",
     "packages": [
         {
             "name": "aura/di",
-            "version": "3.4.0",
+            "version": "4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Di.git",
-                "reference": "f676b38a0d1c3b0d7897b0a082f4811eb8b08faa"
+                "reference": "faf49669dae6b422f298803f25ef12997906f2e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/auraphp/Aura.Di/zipball/f676b38a0d1c3b0d7897b0a082f4811eb8b08faa",
-                "reference": "f676b38a0d1c3b0d7897b0a082f4811eb8b08faa",
+                "url": "https://api.github.com/repos/auraphp/Aura.Di/zipball/faf49669dae6b422f298803f25ef12997906f2e9",
+                "reference": "faf49669dae6b422f298803f25ef12997906f2e9",
                 "shasum": ""
             },
             "require": {
-                "container-interop/container-interop": "~1.0",
-                "php": ">=5.5.0"
+                "php": "^7.4 || ^8.0",
+                "psr/container": "^1.1.1 || ^2.0.2"
             },
             "provide": {
-                "container-interop/container-interop-implementation": "^1.0"
+                "psr/container-implementation": "^1.0"
             },
             "require-dev": {
-                "acclimate/container": "~1.0",
-                "mouf/picotainer": "~1.0",
-                "phpunit/phpunit": "~5.7 || ~4.8"
+                "phpunit/phpunit": "^9.5",
+                "producer/producer": "^2.3",
+                "roave/security-advisories": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -59,9 +59,9 @@
             ],
             "support": {
                 "issues": "https://github.com/auraphp/Aura.Di/issues",
-                "source": "https://github.com/auraphp/Aura.Di/tree/3.x"
+                "source": "https://github.com/auraphp/Aura.Di/tree/4.2.1"
             },
-            "time": "2017-07-30T04:14:30+00:00"
+            "time": "2022-01-04T21:37:03+00:00"
         },
         {
             "name": "aura/router",
@@ -166,42 +166,6 @@
             "time": "2022-06-29T23:37:57+00:00"
         },
         {
-            "name": "container-interop/container-interop",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/container-interop/container-interop.git",
-                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/79cbf1341c22ec75643d841642dd5d6acd83bdb8",
-                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8",
-                "shasum": ""
-            },
-            "require": {
-                "psr/container": "^1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Interop\\Container\\": "src/Interop/Container/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
-            "homepage": "https://github.com/container-interop/container-interop",
-            "support": {
-                "issues": "https://github.com/container-interop/container-interop/issues",
-                "source": "https://github.com/container-interop/container-interop/tree/master"
-            },
-            "abandoned": "psr/container",
-            "time": "2017-02-14T19:40:03+00:00"
-        },
-        {
             "name": "filp/whoops",
             "version": "2.14.5",
             "source": {
@@ -271,63 +235,6 @@
                 }
             ],
             "time": "2022-01-07T12:00:00+00:00"
-        },
-        {
-            "name": "http-interop/http-middleware",
-            "version": "0.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/http-interop/http-middleware.git",
-                "reference": "ff545c87e97bf4d88f0cb7eb3e89f99aaa53d7a9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/http-interop/http-middleware/zipball/ff545c87e97bf4d88f0cb7eb3e89f99aaa53d7a9",
-                "reference": "ff545c87e97bf4d88f0cb7eb3e89f99aaa53d7a9",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "psr/http-message": "^1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Interop\\Http\\Middleware\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interface for HTTP middleware",
-            "keywords": [
-                "factory",
-                "http",
-                "middleware",
-                "psr",
-                "psr-17",
-                "psr-7",
-                "request",
-                "response"
-            ],
-            "support": {
-                "issues": "https://github.com/http-interop/http-middleware/issues",
-                "source": "https://github.com/http-interop/http-middleware/tree/master"
-            },
-            "abandoned": "http-interop/http-server-middleware",
-            "time": "2016-09-25T13:30:27+00:00"
         },
         {
             "name": "laminas/laminas-config",
@@ -568,30 +475,26 @@
         },
         {
             "name": "laminas/laminas-httphandlerrunner",
-            "version": "1.5.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-httphandlerrunner.git",
-                "reference": "5f94e55d93f756e8ad07b9049aeb3d6d84582d0e"
+                "reference": "4d337cde83e6b901a4443b0ab5c3b97cbaa46413"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-httphandlerrunner/zipball/5f94e55d93f756e8ad07b9049aeb3d6d84582d0e",
-                "reference": "5f94e55d93f756e8ad07b9049aeb3d6d84582d0e",
+                "url": "https://api.github.com/repos/laminas/laminas-httphandlerrunner/zipball/4d337cde83e6b901a4443b0ab5c3b97cbaa46413",
+                "reference": "4d337cde83e6b901a4443b0ab5c3b97cbaa46413",
                 "shasum": ""
             },
             "require": {
-                "laminas/laminas-zendframework-bridge": "^1.0",
                 "php": "^7.3 || ~8.0.0 || ~8.1.0",
                 "psr/http-message": "^1.0",
                 "psr/http-message-implementation": "^1.0",
                 "psr/http-server-handler": "^1.0"
             },
-            "replace": {
-                "zendframework/zend-httphandlerrunner": "^1.1.0"
-            },
             "require-dev": {
-                "laminas/laminas-coding-standard": "~1.0.0",
+                "laminas/laminas-coding-standard": "~2.3.0",
                 "laminas/laminas-diactoros": "^2.8.0",
                 "phpunit/phpunit": "^9.5.9",
                 "psalm/plugin-phpunit": "^0.16.1",
@@ -635,7 +538,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-09-22T09:17:54+00:00"
+            "time": "2021-09-22T09:27:36+00:00"
         },
         {
             "name": "laminas/laminas-stdlib",
@@ -697,92 +600,31 @@
             "time": "2022-06-10T14:49:09+00:00"
         },
         {
-            "name": "laminas/laminas-zendframework-bridge",
-            "version": "1.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
-                "reference": "7f049390b756d34ba5940a8fb47634fbb51f79ab"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/7f049390b756d34ba5940a8fb47634fbb51f79ab",
-                "reference": "7f049390b756d34ba5940a8fb47634fbb51f79ab",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.4, <8.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.5.14",
-                "psalm/plugin-phpunit": "^0.15.2",
-                "squizlabs/php_codesniffer": "^3.6.2",
-                "vimeo/psalm": "^4.21.0"
-            },
-            "type": "library",
-            "extra": {
-                "laminas": {
-                    "module": "Laminas\\ZendFrameworkBridge"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/autoload.php"
-                ],
-                "psr-4": {
-                    "Laminas\\ZendFrameworkBridge\\": "src//"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Alias legacy ZF class names to Laminas Project equivalents.",
-            "keywords": [
-                "ZendFramework",
-                "autoloading",
-                "laminas",
-                "zf"
-            ],
-            "support": {
-                "forum": "https://discourse.laminas.dev/",
-                "issues": "https://github.com/laminas/laminas-zendframework-bridge/issues",
-                "rss": "https://github.com/laminas/laminas-zendframework-bridge/releases.atom",
-                "source": "https://github.com/laminas/laminas-zendframework-bridge"
-            },
-            "funding": [
-                {
-                    "url": "https://funding.communitybridge.org/projects/laminas-project",
-                    "type": "community_bridge"
-                }
-            ],
-            "time": "2022-02-22T22:17:01+00:00"
-        },
-        {
             "name": "mindplay/middleman",
-            "version": "2.0.1",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mindplay-dk/middleman.git",
-                "reference": "712098b23e00dcbf9ca93c4416e178388796da15"
+                "reference": "6bf522aeb6c8bbf70ade466c2d2f08ea57695bb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mindplay-dk/middleman/zipball/712098b23e00dcbf9ca93c4416e178388796da15",
-                "reference": "712098b23e00dcbf9ca93c4416e178388796da15",
+                "url": "https://api.github.com/repos/mindplay-dk/middleman/zipball/6bf522aeb6c8bbf70ade466c2d2f08ea57695bb2",
+                "reference": "6bf522aeb6c8bbf70ade466c2d2f08ea57695bb2",
                 "shasum": ""
             },
             "require": {
-                "container-interop/container-interop": "^1.1",
-                "http-interop/http-middleware": "=0.2",
                 "mindplay/readable": "^1",
-                "php": ">=5.4",
-                "psr/http-message": "~1.0"
+                "php": "^7.3 || ^8.0",
+                "psr/container": "^1.0|^2.0",
+                "psr/http-message": "^1.0",
+                "psr/http-server-handler": "^1.0",
+                "psr/http-server-middleware": "^1.0"
             },
             "require-dev": {
-                "mindplay/testies": "^0.2.0",
-                "mockery/mockery": "^0.9.4",
-                "phpunit/php-code-coverage": "^2.2"
+                "mindplay/testies": "^1.0",
+                "nyholm/psr7": "^1.4",
+                "phpunit/php-code-coverage": "^9.2.5"
             },
             "type": "library",
             "autoload": {
@@ -803,9 +645,9 @@
             "description": "PSR-7 middleware dispatcher. Let's stop trying to make this complicated.",
             "support": {
                 "issues": "https://github.com/mindplay-dk/middleman/issues",
-                "source": "https://github.com/mindplay-dk/middleman/tree/master"
+                "source": "https://github.com/mindplay-dk/middleman/tree/4.0.1"
             },
-            "time": "2016-11-21T08:14:23+00:00"
+            "time": "2021-07-27T17:30:41+00:00"
         },
         {
             "name": "mindplay/readable",
@@ -1115,6 +957,63 @@
             "time": "2018-10-30T16:46:14+00:00"
         },
         {
+            "name": "psr/http-server-middleware",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-server-middleware.git",
+                "reference": "2296f45510945530b9dceb8bcedb5cb84d40c5f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-server-middleware/zipball/2296f45510945530b9dceb8bcedb5cb84d40c5f5",
+                "reference": "2296f45510945530b9dceb8bcedb5cb84d40c5f5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "psr/http-message": "^1.0",
+                "psr/http-server-handler": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Server\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP server-side middleware",
+            "keywords": [
+                "http",
+                "http-interop",
+                "middleware",
+                "psr",
+                "psr-15",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/http-server-middleware/issues",
+                "source": "https://github.com/php-fig/http-server-middleware/tree/master"
+            },
+            "time": "2018-10-30T17:12:04+00:00"
+        },
+        {
             "name": "psr/log",
             "version": "1.1.4",
             "source": {
@@ -1215,24 +1114,27 @@
         },
         {
             "name": "weavephp/config-laminas",
-            "version": "3.0.0",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/config-laminas.git",
-                "reference": "1ddc1737713a6565fb20842801852a9b1ba33e0e"
+                "reference": "a479bf23bc5a0966453b1e19f779850a2cf69f54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/config-laminas/zipball/1ddc1737713a6565fb20842801852a9b1ba33e0e",
-                "reference": "1ddc1737713a6565fb20842801852a9b1ba33e0e",
+                "url": "https://api.github.com/repos/weavephp/config-laminas/zipball/a479bf23bc5a0966453b1e19f779850a2cf69f54",
+                "reference": "a479bf23bc5a0966453b1e19f779850a2cf69f54",
                 "shasum": ""
             },
             "require": {
                 "laminas/laminas-config": "^3.3",
-                "laminas/laminas-config-aggregator": "^1.2"
+                "laminas/laminas-config-aggregator": "^1.2",
+                "php": "^8.0 | ^8.1"
             },
             "require-dev": {
-                "squizlabs/php_codesniffer": "^3.0"
+                "phan/phan": "^5.0",
+                "squizlabs/php_codesniffer": "^3.0",
+                "weavephp/weave": "^2.0.0"
             },
             "type": "weave-adaptor",
             "autoload": {
@@ -1258,31 +1160,33 @@
             ],
             "support": {
                 "issues": "https://github.com/weavephp/config-laminas/issues",
-                "source": "https://github.com/weavephp/config-laminas/tree/3.0.0"
+                "source": "https://github.com/weavephp/config-laminas/tree/4.0.0"
             },
-            "time": "2020-03-03T12:42:56+00:00"
+            "time": "2022-07-05T17:25:57+00:00"
         },
         {
             "name": "weavephp/container-aura",
-            "version": "0.1.1",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/container-aura.git",
-                "reference": "f3ebfa2f9b475186123b0090cdfd65950145a1a2"
+                "reference": "5110b7d7ba66e2786c1faf7f1f58cbd6e2197966"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/container-aura/zipball/f3ebfa2f9b475186123b0090cdfd65950145a1a2",
-                "reference": "f3ebfa2f9b475186123b0090cdfd65950145a1a2",
+                "url": "https://api.github.com/repos/weavephp/container-aura/zipball/5110b7d7ba66e2786c1faf7f1f58cbd6e2197966",
+                "reference": "5110b7d7ba66e2786c1faf7f1f58cbd6e2197966",
                 "shasum": ""
             },
             "require": {
-                "aura/di": "^3.4"
+                "aura/di": "^4.0",
+                "php": "^8.0 | ^8.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.7",
+                "phan/phan": "^5.0",
+                "phpunit/phpunit": "^9.0",
                 "squizlabs/php_codesniffer": "^3.0",
-                "weavephp/weave": "^0.1.2"
+                "weavephp/weave": "^2.0.0"
             },
             "type": "weave-adaptor",
             "autoload": {
@@ -1308,29 +1212,33 @@
             ],
             "support": {
                 "issues": "https://github.com/weavephp/container-aura/issues",
-                "source": "https://github.com/weavephp/container-aura/tree/master"
+                "source": "https://github.com/weavephp/container-aura/tree/4.1.0"
             },
-            "time": "2018-03-30T16:17:17+00:00"
+            "time": "2022-07-05T17:19:41+00:00"
         },
         {
             "name": "weavephp/emitter-laminas",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/emitter-laminas.git",
-                "reference": "22b3bcbfe66e84b7c1ec085a24b42c5bcd11b84f"
+                "reference": "c716c835dfb2e64bc1b05c93a51939b3b70f0949"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/emitter-laminas/zipball/22b3bcbfe66e84b7c1ec085a24b42c5bcd11b84f",
-                "reference": "22b3bcbfe66e84b7c1ec085a24b42c5bcd11b84f",
+                "url": "https://api.github.com/repos/weavephp/emitter-laminas/zipball/c716c835dfb2e64bc1b05c93a51939b3b70f0949",
+                "reference": "c716c835dfb2e64bc1b05c93a51939b3b70f0949",
                 "shasum": ""
             },
             "require": {
-                "laminas/laminas-httphandlerrunner": "^1.1.0"
+                "laminas/laminas-httphandlerrunner": "^2.1",
+                "php": "^8.0 | ^8.1"
             },
             "require-dev": {
-                "squizlabs/php_codesniffer": "^3.0"
+                "laminas/laminas-diactoros": "^2.11",
+                "phan/phan": "^5.0",
+                "squizlabs/php_codesniffer": "^3.0",
+                "weavephp/weave": "^2.0.0"
             },
             "type": "weave-adaptor",
             "autoload": {
@@ -1356,31 +1264,33 @@
             ],
             "support": {
                 "issues": "https://github.com/weavephp/emitter-laminas/issues",
-                "source": "https://github.com/weavephp/emitter-laminas/tree/1.0.0"
+                "source": "https://github.com/weavephp/emitter-laminas/tree/2.0.0"
             },
-            "time": "2020-03-03T16:46:25+00:00"
+            "time": "2022-07-05T17:26:10+00:00"
         },
         {
             "name": "weavephp/error-whoops",
-            "version": "0.0.4",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/error-whoops.git",
-                "reference": "8fc22a0bc9fbb50a43cef1cd1c6c12590c625bcf"
+                "reference": "455c8558479d9417987527a1f755841f2e6347df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/error-whoops/zipball/8fc22a0bc9fbb50a43cef1cd1c6c12590c625bcf",
-                "reference": "8fc22a0bc9fbb50a43cef1cd1c6c12590c625bcf",
+                "url": "https://api.github.com/repos/weavephp/error-whoops/zipball/455c8558479d9417987527a1f755841f2e6347df",
+                "reference": "455c8558479d9417987527a1f755841f2e6347df",
                 "shasum": ""
             },
             "require": {
-                "filp/whoops": "2.*"
+                "filp/whoops": "2.*",
+                "php": "^8.0 | ^8.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.7",
+                "phan/phan": "^5.0",
+                "phpunit/phpunit": "^9.0",
                 "squizlabs/php_codesniffer": "^3.0",
-                "weavephp/weave": "^0.1.2"
+                "weavephp/weave": "^2.0.0"
             },
             "type": "weave-adaptor",
             "autoload": {
@@ -1406,29 +1316,32 @@
             ],
             "support": {
                 "issues": "https://github.com/weavephp/error-whoops/issues",
-                "source": "https://github.com/weavephp/error-whoops/tree/master"
+                "source": "https://github.com/weavephp/error-whoops/tree/1.0.0"
             },
-            "time": "2018-03-30T16:20:51+00:00"
+            "time": "2022-07-05T17:19:49+00:00"
         },
         {
             "name": "weavephp/http-laminasdiactoros",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/http-laminasdiactoros.git",
-                "reference": "8914dc2366ecfa2663c1603341d4e59fd90de7b6"
+                "reference": "09b8c5654a8ef56344ebbb51597f6a088db35e06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/http-laminasdiactoros/zipball/8914dc2366ecfa2663c1603341d4e59fd90de7b6",
-                "reference": "8914dc2366ecfa2663c1603341d4e59fd90de7b6",
+                "url": "https://api.github.com/repos/weavephp/http-laminasdiactoros/zipball/09b8c5654a8ef56344ebbb51597f6a088db35e06",
+                "reference": "09b8c5654a8ef56344ebbb51597f6a088db35e06",
                 "shasum": ""
             },
             "require": {
-                "laminas/laminas-diactoros": "^2.2"
+                "laminas/laminas-diactoros": "^2.2",
+                "php": "^8.0 | ^8.1"
             },
             "require-dev": {
-                "squizlabs/php_codesniffer": "^3.0"
+                "phan/phan": "^5.0",
+                "squizlabs/php_codesniffer": "^3.0",
+                "weavephp/weave": "^2.0.0"
             },
             "type": "weave-adaptor",
             "autoload": {
@@ -1454,29 +1367,32 @@
             ],
             "support": {
                 "issues": "https://github.com/weavephp/http-laminasdiactoros/issues",
-                "source": "https://github.com/weavephp/http-laminasdiactoros/tree/2.0.0"
+                "source": "https://github.com/weavephp/http-laminasdiactoros/tree/3.0.0"
             },
-            "time": "2020-03-03T16:37:40+00:00"
+            "time": "2022-07-05T17:26:50+00:00"
         },
         {
-            "name": "weavephp/middleware-middleman2",
-            "version": "0.0.4",
+            "name": "weavephp/middleware-middleman",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/weavephp/middleware-middleman2.git",
-                "reference": "90dc363fa1638ce6f34b263c58ed715863d30aef"
+                "url": "https://github.com/weavephp/middleware-middleman.git",
+                "reference": "47ebc5b14efece2e1b4995f9d77c54d3797b4ecc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/middleware-middleman2/zipball/90dc363fa1638ce6f34b263c58ed715863d30aef",
-                "reference": "90dc363fa1638ce6f34b263c58ed715863d30aef",
+                "url": "https://api.github.com/repos/weavephp/middleware-middleman/zipball/47ebc5b14efece2e1b4995f9d77c54d3797b4ecc",
+                "reference": "47ebc5b14efece2e1b4995f9d77c54d3797b4ecc",
                 "shasum": ""
             },
             "require": {
-                "mindplay/middleman": "~2.0"
+                "mindplay/middleman": "~4.0",
+                "php": "^8.0 | ^8.1"
             },
             "require-dev": {
-                "squizlabs/php_codesniffer": "^3.0"
+                "phan/phan": "^5.0",
+                "squizlabs/php_codesniffer": "^3.0",
+                "weavephp/weave": "^2.0.0"
             },
             "type": "weave-adaptor",
             "autoload": {
@@ -1501,32 +1417,34 @@
                 "weave"
             ],
             "support": {
-                "issues": "https://github.com/weavephp/middleware-middleman2/issues",
-                "source": "https://github.com/weavephp/middleware-middleman2/tree/master"
+                "issues": "https://github.com/weavephp/middleware-middleman/issues",
+                "source": "https://github.com/weavephp/middleware-middleman/tree/4.0.0"
             },
-            "time": "2018-03-30T16:33:29+00:00"
+            "time": "2022-07-05T17:27:10+00:00"
         },
         {
             "name": "weavephp/router-aura",
-            "version": "0.1.3",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/router-aura.git",
-                "reference": "79e2e0a97b4971cb5ccead9c3b280e1ae5dd0c5e"
+                "reference": "f6dd801c991b4963acf8a948ee74c32ad4abf854"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/router-aura/zipball/79e2e0a97b4971cb5ccead9c3b280e1ae5dd0c5e",
-                "reference": "79e2e0a97b4971cb5ccead9c3b280e1ae5dd0c5e",
+                "url": "https://api.github.com/repos/weavephp/router-aura/zipball/f6dd801c991b4963acf8a948ee74c32ad4abf854",
+                "reference": "f6dd801c991b4963acf8a948ee74c32ad4abf854",
                 "shasum": ""
             },
             "require": {
                 "aura/router": "^3.1",
-                "psr/log": "^1.1",
-                "weavephp/weave": "^0.1.2"
+                "php": "^8.0 | ^8.1",
+                "psr/log": "^1.1"
             },
             "require-dev": {
-                "squizlabs/php_codesniffer": "^3.0"
+                "phan/phan": "^5.0",
+                "squizlabs/php_codesniffer": "^3.0",
+                "weavephp/weave": "^2.0.0"
             },
             "type": "weave-adaptor",
             "autoload": {
@@ -1552,32 +1470,33 @@
             ],
             "support": {
                 "issues": "https://github.com/weavephp/router-aura/issues",
-                "source": "https://github.com/weavephp/router-aura/tree/master"
+                "source": "https://github.com/weavephp/router-aura/tree/1.0.0"
             },
-            "time": "2019-01-07T09:30:39+00:00"
+            "time": "2022-07-05T17:01:52+00:00"
         },
         {
             "name": "weavephp/weave",
-            "version": "0.1.3",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weavephp/weave.git",
-                "reference": "44183a5bcb9e3ed3754cc76aa9e0724d718caeec"
+                "reference": "90f772d7a590943cf9b735872204ff0582055ba6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weavephp/weave/zipball/44183a5bcb9e3ed3754cc76aa9e0724d718caeec",
-                "reference": "44183a5bcb9e3ed3754cc76aa9e0724d718caeec",
+                "url": "https://api.github.com/repos/weavephp/weave/zipball/90f772d7a590943cf9b735872204ff0582055ba6",
+                "reference": "90f772d7a590943cf9b735872204ff0582055ba6",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6",
+                "php": "^8.0 | ^8.1",
                 "psr/http-message": "~1.0",
                 "psr/log": "~1.0",
                 "weavephp/adaptor-middleware": "^0.0.4"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.7",
+                "phan/phan": "^5.0",
+                "phpunit/phpunit": "^9.0",
                 "squizlabs/php_codesniffer": "^3.0"
             },
             "type": "framework",
@@ -1604,9 +1523,9 @@
             ],
             "support": {
                 "issues": "https://github.com/weavephp/weave/issues",
-                "source": "https://github.com/weavephp/weave/tree/master"
+                "source": "https://github.com/weavephp/weave/tree/2.0.0"
             },
-            "time": "2018-07-15T07:44:59+00:00"
+            "time": "2022-07-05T10:56:20+00:00"
         },
         {
             "name": "webimpress/safe-writer",
@@ -2391,21 +2310,20 @@
         },
         {
             "name": "symfony/console",
-            "version": "v6.1.2",
+            "version": "v6.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "7a86c1c42fbcb69b59768504c7bca1d3767760b7"
+                "reference": "d8d41b93c16f1da2f2d4b9209b7de78c4d203642"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/7a86c1c42fbcb69b59768504c7bca1d3767760b7",
-                "reference": "7a86c1c42fbcb69b59768504c7bca1d3767760b7",
+                "url": "https://api.github.com/repos/symfony/console/zipball/d8d41b93c16f1da2f2d4b9209b7de78c4d203642",
+                "reference": "d8d41b93c16f1da2f2d4b9209b7de78c4d203642",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
-                "symfony/deprecation-contracts": "^2.1|^3",
+                "php": ">=8.0.2",
                 "symfony/polyfill-mbstring": "~1.0",
                 "symfony/service-contracts": "^1.1|^2|^3",
                 "symfony/string": "^5.4|^6.0"
@@ -2467,7 +2385,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v6.1.2"
+                "source": "https://github.com/symfony/console/tree/v6.0.10"
             },
             "funding": [
                 {
@@ -2483,29 +2401,29 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-06-26T13:01:30+00:00"
+            "time": "2022-06-26T13:01:22+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v3.1.1",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "07f1b9cc2ffee6aaafcf4b710fbc38ff736bd918"
+                "reference": "26954b3d62a6c5fd0ea8a2a00c0353a14978d05c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/07f1b9cc2ffee6aaafcf4b710fbc38ff736bd918",
-                "reference": "07f1b9cc2ffee6aaafcf4b710fbc38ff736bd918",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/26954b3d62a6c5fd0ea8a2a00c0353a14978d05c",
+                "reference": "26954b3d62a6c5fd0ea8a2a00c0353a14978d05c",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.0.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "3.1-dev"
+                    "dev-main": "3.0-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -2534,7 +2452,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.1.1"
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.0.2"
             },
             "funding": [
                 {
@@ -2550,7 +2468,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-02-25T11:15:52+00:00"
+            "time": "2022-01-02T09:55:41+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -3050,20 +2968,20 @@
         },
         {
             "name": "symfony/string",
-            "version": "v6.1.2",
+            "version": "v6.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "1903f2879875280c5af944625e8246d81c2f0604"
+                "reference": "1b3adf02a0fc814bd9118d7fd68a097a599ebc27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/1903f2879875280c5af944625e8246d81c2f0604",
-                "reference": "1903f2879875280c5af944625e8246d81c2f0604",
+                "url": "https://api.github.com/repos/symfony/string/zipball/1b3adf02a0fc814bd9118d7fd68a097a599ebc27",
+                "reference": "1b3adf02a0fc814bd9118d7fd68a097a599ebc27",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.0.2",
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-intl-grapheme": "~1.0",
                 "symfony/polyfill-intl-normalizer": "~1.0",
@@ -3115,7 +3033,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v6.1.2"
+                "source": "https://github.com/symfony/string/tree/v6.0.10"
             },
             "funding": [
                 {
@@ -3131,7 +3049,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-06-26T16:35:04+00:00"
+            "time": "2022-06-26T16:34:50+00:00"
         },
         {
             "name": "tysonandre/var_representation_polyfill",
@@ -3251,7 +3169,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^8.0"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
 }

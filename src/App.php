@@ -11,10 +11,10 @@ namespace App;
  */
 class App
 {
-	use \Weave\Weave,
-		\Weave\Config\Laminas\Laminas,
-		\Weave\Error\Whoops\Whoops,
-		\Weave\Container\Aura\Aura;
+	use \Weave\Weave;
+	use \Weave\Config\Laminas\Laminas;
+	use \Weave\Error\Whoops\Whoops;
+	use \Weave\Container\Aura\Aura;
 		// ^^ Use Laminas for config, Whoops for error handling and Aura for the DIC.
 
 	/**
@@ -30,12 +30,12 @@ class App
 	 * the Aura\Di\ContainerConfigInterface interface to configure. In our case, we have an
 	 * instance of App\Config we pass in.
 	 *
-	 * @param array  $config      Optional config array as provided from loadConfig().
-	 * @param string $environment Optional indication of the runtime environment.
+	 * @param array   $config      Optional config array as provided from loadConfig().
+	 * @param ?string $environment Optional indication of the runtime environment.
 	 *
 	 * @return array
 	 */
-	protected function provideContainerConfigs(array $config = [], $environment = null)
+	protected function provideContainerConfigs(array $config = [], ?string $environment = null): array
 	{
 		return [
 			new Config($config)
@@ -62,11 +62,11 @@ class App
 	 * also call a Controller after executing some more middlewares, you can use the
 	 * Dispatch middleware (as shown here) to decide when the Controller is executed.
 	 *
-	 * @param string $pipelineName The name of the pipeline to return a definition for.
+	 * @param ?string $pipelineName The name of the pipeline to return a definition for.
 	 *
 	 * @return mixed Whatever the chosen Middleware stack uses for a pipeline of middlewares.
 	 */
-	protected function provideMiddlewarePipeline($pipelineName = null)
+	protected function provideMiddlewarePipeline(?string $pipelineName = null): mixed
 	{
 		switch ($pipelineName) {
 			case 'uppercaseOwner':
@@ -107,9 +107,9 @@ class App
 	 *
 	 * @param mixed $router The object to setup routes against.
 	 *
-	 * @return null
+	 * @return void
 	 */
-	protected function provideRouteConfiguration($router)
+	protected function provideRouteConfiguration(mixed $router): void
 	{
 		$router->get(
 			'root',
